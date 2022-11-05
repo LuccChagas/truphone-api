@@ -15,7 +15,7 @@ type DB struct {
 func Conn() (*pgx.Conn, error) {
 	utils.LoadEnv()
 
-	DSN := fmt.Sprintf("host=%s user=%s password=%s dbname=%s port=%v sslmode=disable TimeZone=Asia/Shanghai",
+	DSN := fmt.Sprintf("host=%s user=%s password=%s dbname=%s port=%v sslmode=disable TimeZone=America/Sao_Paulo",
 		os.Getenv("HOSTNAME"),
 		os.Getenv("DB_USER"),
 		os.Getenv("DB_PASS"),
